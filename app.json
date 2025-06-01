@@ -1,0 +1,57 @@
+{
+  "aiPrompt": {
+    "description": "A file containing the prompt to use for the Gemini API",
+    "type": "string",
+    "required": true,
+    "uiHint": "filepicker"
+  },
+  "transferType": {
+    "description": "The mode of call transfer",
+    "type": "string",
+    "default": "none",
+    "enum": ["none", "blind transfer", "warm transfer with summary"]
+  },
+  "transferNumber": {
+    "description": "The number to transfer the call to.",
+    "type": "string"
+  },
+  "transferTrunk": {
+    "description": "The name of the Carrier you want to transfer the call",
+    "type": "string"
+  },
+  "callerId": {
+    "description": "The caller ID to use for the transfer.  This is optional and defaults to the original caller ID.",
+    "type": "string"
+  },
+  "mcpServers": {
+    "description": "A comma separated list of MCP server URLs.  These will be used to expose tools to the LLM.",
+    "type": "string"
+  },
+  "/ultravox": {
+    "apiKey": {
+      "description": "Your Ultravox API key",
+      "type": "string",
+      "obscure": true,
+      "required": true
+    }
+  },
+  "/gemini": {
+    "apiKey": {
+      "description": "Your Gemini API key",
+      "type": "string",
+      "obscure": true,
+      "required": true
+    },
+    "model": {
+      "description": "The model to use for the Gemini API",
+      "type": "string",
+      "default": "models/gemini-2.0-flash-live-001",
+      "required": true
+    },
+    "voice": {
+      "description": "The voice to use",
+      "type": "string",
+      "default": "Aoede"
+    }
+  }
+}

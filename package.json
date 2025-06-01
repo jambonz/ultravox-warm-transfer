@@ -1,0 +1,22 @@
+{
+  "name": "ultravox-warm-transfer",
+  "version": "0.0.1",
+  "description": "jambonz websocket application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "jslint": "eslint app.js lib"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@jambonz/node-client-ws": "^0.2.3",
+    "axios": "^1.9.0",
+    "express": "^5.1.0",
+    "pino": "^9.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.27.0",
+    "eslint-plugin-promise": "^7.2.1"
+  }
+}
